@@ -1,3 +1,59 @@
-* * * * * curl http://sample-nodejs:8080 >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * ( curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )
+
+* * * * * ( sleep 5 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 10 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 15 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 20 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 25 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 30 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 35 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 40 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 45 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 50 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 55 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )
+
+* * * * * ( sleep 5 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 10 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 15 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 20 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 25 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 30 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 35 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 40 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 45 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 50 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+* * * * * ( sleep 55 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
+
+### Run the synchronization module every 30 seconds for the tokens
+
+* * * * * ( curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/service )
+
+* * * * * ( sleep 30 ; curl -d "chainId=1" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/service )  
+
+* * * * * ( curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/service )
+
+* * * * * ( sleep 30 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/service )
 
 # An empty line is required at the end of this file for a valid cron file.
