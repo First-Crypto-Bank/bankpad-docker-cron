@@ -1,3 +1,5 @@
+### Run the synchronization module every 5 seconds for the tokens
+
 * * * * * ( curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )
 
 * * * * * ( sleep 5 ; curl -d "chainId=5" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://127.0.0.1:3000/sync/tokens )  
